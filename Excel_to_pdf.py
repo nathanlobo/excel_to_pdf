@@ -83,10 +83,10 @@ first_run = True
 def main(first_run):
     sheet_to_convert = "single page"  # Change this to the desired sheet name
     if first_run:
-        folder_path = input("Enter Folder Location: ").strip()
+        folder_path = input("\nEnter Folder Location: ").strip()
         first_run = False
     else:
-        folder_path = input("Enter Folder Location to Cont. or Press Enter to Exit: ").strip()
+        folder_path = input("\nEnter Folder Location to Cont. or Press Enter to Exit: ").strip()
         if not folder_path.strip():
             print("Exiting...")
             time.sleep(.7)
